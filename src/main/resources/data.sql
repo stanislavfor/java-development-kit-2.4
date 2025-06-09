@@ -1,0 +1,5 @@
+-- data.sql --
+-- INSERT INTO employees (phone_number, employee_name, work_experience) VALUES ('+79991234567', 'Ивановский Петр', 5);
+-- INSERT INTO employees (phone_number, employee_name, work_experience) VALUES ('+79999876543', 'Петрова Анна', 3);
+-- INSERT INTO employees (phone_number, employee_name, work_experience) VALUES ('+79009876599', 'Петров Алексей', 4);
+-- INSERT INTO employees (phone_number, employee_name, work_experience) VALUES ('+79009876577', 'Попова Марина', 1);

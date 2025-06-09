@@ -1,17 +1,24 @@
 package com.example.hometask;
 
-import com.example.hometask.employeedirectory.EmployeeService;
-import com.example.hometask.employeedirectory.UserInterface;
-import java.util.Scanner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.client.RestTemplate;
 
+
+@SpringBootApplication
 public class Application {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        EmployeeService service = new EmployeeService();
-        UserInterface ui = new UserInterface(scanner, service);
+        SpringApplication.run(Application.class, args);
+    }
 
-        ui.run();
-        ui.searchEmployees();
+    @Bean
+    public RestTemplate restTemplate() {
+        return new RestTemplate();
     }
 }
+
+
+
+
 
